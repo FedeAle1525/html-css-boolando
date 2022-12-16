@@ -80,6 +80,26 @@
     background-image: url(../img/1.webp);
 }
 
+.card-img.img2{
+    background-image: url(../img/2.webp);
+}
+
+.card-img.img3{
+    background-image: url(../img/3.webp)
+}
+
+.card-img.img4{
+    background-image: url(../img/4.webp);
+}
+
+.card-img.img5{
+    background-image: url(../img/5.webp);
+}
+
+.card-img.img6{
+    background-image: url(../img/6.webp);
+}
+
 .discount.position{
     position: absolute;
     left: 0;
