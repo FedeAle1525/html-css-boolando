@@ -31,7 +31,17 @@
     font-size: 14px;
     font-weight: bold;
     padding: 0 5px;
-    line-height: 25px;
+    /* line-height: 25px; */
+    line-height: 1.5rem;
+}
+
+/* Regola generale per etichetta con cuore */
+.heart{
+    background-color: white;
+    width: max-content;
+    padding: 0 10px;
+    /* line-height: 25px; */
+    line-height: 1.5rem;
 }
 
 /* DEBUG */
@@ -73,7 +83,13 @@
 .discount.position{
     position: absolute;
     left: 0;
-    bottom: 10%;
+    bottom: 5%;
+}
+
+.heart.position{
+    position: absolute;
+    right: 0;
+    top: 5px;
 }
 
 /* FOOTER */
