@@ -24,8 +24,7 @@
 }
 
 /* Regola generale per etichetta di sconto */
-.discount{
-    background-color: red;
+.label{
     color: white;
     width: max-content;
     font-size: 14px;
@@ -43,6 +42,29 @@
     /* line-height: 25px; */
     line-height: 1.5rem;
 }
+
+/* Regola generale per posizione etichetta cuore */
+.position-top{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+/* Regola generale per posizione etichetta1 sotto */
+.position{
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+
+/* Regola generale per posizionare etihetta2 sotto */
+.position2{
+    position: absolute;
+    bottom: 5%;
+    left: 48px;
+}
+
+
 
 /* DEBUG */
 
@@ -100,17 +122,16 @@
     background-image: url(../img/6.webp);
 }
 
-.discount.position{
-    position: absolute;
-    left: 0;
-    bottom: 5%;
+.label.discount{
+    background-color: red;
 }
 
-.heart.position{
-    position: absolute;
-    right: 0;
-    top: 5px;
+.label.eco{
+    background-color: green;
 }
+
+
+
 
 /* FOOTER */
 
