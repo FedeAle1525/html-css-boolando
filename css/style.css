@@ -137,6 +137,12 @@
     background-color: green;
 }
 
+.row.label{
+    gap: 5px;
+    justify-content: flex-start;
+    padding: 0;
+}
+
 
 /* FOOTER */
 
