@@ -9,14 +9,42 @@
     margin: 0 auto;
 }
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* DEBUG */
+
+.debug .col{
+    border: 2px solid black;
+    padding: 20px;
+}
+
 /* HEADER */
 
 .main-header{
     min-height: 100px;
     width: 100%;
     background-color: orange;
-    position: fixed;
+    /* position: fixed; */
 }
+
+
+/* MAIN */
+
+.main-content{
+    padding: 30px 60px;
+}
+
+.row-col-3 > .col{
+    flex-basis: calc(100%/ 3);
+    /* margin-right: 20px; */
+}
+
+/* .row-col-3 > .col:nth-child(3n){
+    margin-right: 0;
+} */
 
 /* FOOTER */
 
