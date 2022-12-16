@@ -17,8 +17,21 @@
 /* Regola generale per container img in card */
 .card-img{ 
     min-height: 400px;
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Regola generale per etichetta di sconto */
+.discount{
+    background-color: red;
+    color: white;
+    width: max-content;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 25px;
 }
 
 /* DEBUG */
@@ -55,6 +68,12 @@
 
 .card-img.img1{
     background-image: url(../img/1.webp);
+}
+
+.discount.position{
+    position: absolute;
+    left: 0;
+    bottom: 10%;
 }
 
 /* FOOTER */
