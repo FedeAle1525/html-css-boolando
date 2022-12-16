@@ -64,7 +64,10 @@
     left: 48px;
 }
 
-
+/* Regola generale per "space-between" da assegnare a riga */
+.between{
+    justify-content: space-between;
+}
 
 /* DEBUG */
 
@@ -77,16 +80,20 @@
 
 .main-header{
     min-height: 100px;
-    width: 100%;
     background-color: orange;
-    /* position: fixed; */
+    padding: 30px 0;
+    /* Regole per fissare header in alto alla pagina */
+    position: fixed;
+    width: 100%;
+    /* Regola per rendere la "nav" primo elemento con proprietà position */
+    z-index: 9999;
 }
 
 
 /* MAIN */
 
 .main-content{
-    padding: 30px 60px;
+    padding: 30px 0;
 }
 
 .row-col-3 > .col{
