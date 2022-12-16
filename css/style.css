@@ -14,11 +14,18 @@
     flex-wrap: wrap;
 }
 
+/* Regola generale per container img in card */
+.card-img{ 
+    min-height: 400px;
+    background-size: contain;
+    background-position: bottom;
+}
+
 /* DEBUG */
 
 .debug .col{
     border: 2px solid black;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* HEADER */
@@ -45,6 +52,10 @@
 /* .row-col-3 > .col:nth-child(3n){
     margin-right: 0;
 } */
+
+.card-img.img1{
+    background-image: url(../img/1.webp);
+}
 
 /* FOOTER */
 
