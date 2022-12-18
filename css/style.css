@@ -79,16 +79,21 @@
 /* HEADER */
 
 .main-header{
-    min-height: 100px;
+    min-height: 80px;
+    background-color: orange;
+    /* padding: 30px 0; */
+}
+
+
+.navbar{
     background-color: orange;
     padding: 30px 0;
     /* Regole per fissare header in alto alla pagina */
-    /* position: fixed; */
-    /* width: 100%; */
-    /* Regola per rendere la "nav" primo elemento con proprietà position */
-    /* z-index: 9999; */
+    position: fixed;
+    width: 100%;
+     /* Regola per rendere la "nav" primo elemento con proprietà position */
+    z-index: 999;
 }
-
 
 /* MAIN */
 
