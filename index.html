@@ -23,12 +23,16 @@
     </header>
 
     <main class="main-content">
+        <!-- Di norma meglio crare un tag equivalente a dimensioni "main-content" per gestire sfondo -->
         <div class="container">
             <div class="row row-col-3">
                 <!-- Colonna 1 -->
                 <div class="col">
+                    <!-- Come tag semantico meglio <article> che <div> -->
                     <div class="card">
                         <div class="card-img img1">
+                            <!-- Più corretto inserire un immagine perchè semanticamente ha un valore -->
+                            <img class="img1" src="./img/1.webp" alt="Levi's Fit Tee">
                             <div class="heart position-top">&hearts;</div>
                             <!-- Riga per allineare etichette -->
                             <div class="row label position">
@@ -41,9 +45,14 @@
                             </div>
                         </div>
                         <div class="card-text">
-                            <p>Levi's</p>
-                            <p>RELAXED FIT TEE UNISEX</p>
-                            <p>14,99 €</p>
+                            <h4>Levi's</h4>
+                            <h3>RELAXED FIT TEE UNISEX</h3>
+                            <p>
+                                <!-- Separo con span per dare stile diversi ai due prezzi -->
+                                <!-- Gestire in base alla posizione -->
+                                <span class="discount-price">14,99&euro;</span> 
+                                <span class="real-price">29,99&euro;</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -51,6 +60,7 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-img img2">
+                            <img src="./img/2.webp" alt="Roses Tee">
                             <div class="heart position-top">&hearts;</div>
                             <div class="label discount position">-30%</div>
                         </div>
@@ -65,6 +75,7 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-img img3">
+                            <img src="./img/3.webp" alt="Colori Pastello">
                             <div class="heart position-top">&hearts;</div>
                             <div class="label discount position">-30%</div>
                         </div>
@@ -79,6 +90,7 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-img img4">
+                            <img src="./img/4.webp" alt="Tee Unisex">
                             <div class="heart position-top">&hearts;</div>
                             <div class="row label position">
                                 <div class="col">
@@ -100,6 +112,7 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-img img5">
+                            <img src="./img/5.webp" alt="Stripe Bodice">
                             <div class="heart position-top">&hearts;</div>
                         </div>
                         <div class="card-text">
@@ -113,6 +126,7 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-img img6">
+                            <img src="./img/6.webp" alt="Maglione">
                             <div class="heart position-top">&hearts;</div>
                             <div class="label eco position">Sostenibilità</div>
                         </div>

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 .container{
     max-width: 900px;
     margin: 0 auto;
@@ -12,6 +16,13 @@
 .row{
     display: flex;
     flex-wrap: wrap;
+    /* Si bilancia con il padding delle colonne per avere la centratura con il container */
+    margin: 0 -10px;
+}
+
+[class^="col"]{
+    /* La metà della distanza per suddividerlo nelle colonne */
+    padding: 0 10px;
 }
 
 /* Regola generale per container img in card */
@@ -38,9 +49,14 @@
 .heart{
     background-color: white;
     width: max-content;
-    padding: 0 10px;
-    /* line-height: 25px; */
-    line-height: 1.5rem;
+    /* Meglio usare altezza che padding, calcolate con Figma
+    padding: 0 10px; */
+    width: 52px;
+    line-height: 52px;
+    font-size: 20px;
+    text-align: center;
+    /* line-height: 25px; 
+    line-height: 1.5rem; */
 }
 
 /* Regola generale per posizione etichetta cuore */
@@ -102,6 +118,7 @@
 }
 
 .row-col-3 > .col{
+    /* Lavorando in dodicesimi il calcolo diventa calc(100% * (4 / 12)) */
     flex-basis: calc(100%/ 3);
     /* margin-right: 20px; */
 }
@@ -110,9 +127,10 @@
     margin-right: 0;
 } */
 
-.card-img.img1{
+/* Semanticamente è scorretto utilizzare l'immagine come background avendo un significato */
+/* .card-img.img1{
     background-image: url(../img/1.webp);
-}
+} 
 
 .card-img.img2{
     background-image: url(../img/2.webp);
@@ -132,7 +150,7 @@
 
 .card-img.img6{
     background-image: url(../img/6.webp);
-}
+} */
 
 .label.discount{
     background-color: red;
@@ -145,6 +163,13 @@
 .row.label{
     gap: 5px;
     justify-content: flex-start;
+    /*Uso regole di reset per annullare le impotazioni nella classe generale "row" */
+    padding: 0;
+    margin: 0;
+}
+
+.row.label > .col{
+    /* Uso le regole di reset per annullare le impostazioni nella clase generale "col" */
     padding: 0;
 }
 
